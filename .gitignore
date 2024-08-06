@@ -1,0 +1,5 @@
+.streamlit/_secrets.toml
+docker-compose.yml
+firestore-key.json
+/tmp_credentials.json
+__pycache__
