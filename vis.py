@@ -31,11 +31,11 @@ def main():
 
     # Check if database secrets have been provided
     database_vars = ["user", "password", "host", "port", "database"]
-    if not st.secrets.load_if_toml_exists() or \
-        "database" not in st.secrets or \
-        not all([key in st.secrets.database for key in database_vars]):
-            st.warning("Database variables not provided!")
-            st.stop()
+    # if not st.secrets.load_if_toml_exists() or \
+    #     "database" not in st.secrets or \
+    #     not all([key in st.secrets.database for key in database_vars]):
+    #         st.warning("Database variables not provided!")
+    #         st.stop()
 
     # # Radiobuttons in one row
     # st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
